@@ -1187,7 +1187,7 @@ int DTreesImpl::calcDir( int splitidx, const vector<int>& _sidx,
             }
         }
     }
-    CV_Assert( (int)_sleft.size() < n && (int)_sright.size() < n );
+    CV_Assert( (int)_sleft.size() <= n && (int)_sright.size() <= n );
     return wleft > wright ? -1 : 1;
 }
 
